@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreclosures AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Foreclosures AI</h1>
+        <p>Find foreclosed properties in your desired location and learn how to invest in real estate!</p>
+    </header>
+    <div class="container">
+        <h2>Search for Foreclosed Properties</h2>
+        <form id="searchForm">
+            <label for="location">Enter Location:</label><br>
+            <input type="text" id="location" name="location" placeholder="City, State"><br>
+            <input type="submit" value="Search">
+        </form>
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <footer>
+        <p>Foreclosures AI &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for handling form submission and displaying results -->
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var location = document.getElementById('location').value;
+            // You can handle the search functionality using JavaScript or connect to an API for fetching data
+            // Display search results dynamically here
+        });
+    </script>
+</body>
+</html>
